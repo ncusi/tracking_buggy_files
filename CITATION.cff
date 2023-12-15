@@ -1,0 +1,87 @@
+cff-version: 1.2.0
+title: Tracking Buggy Files: New Efficient Adaptive Bug Localization Algorithm
+message: >-
+  Please cite this software using the metadata from
+  'preferred-citation'.
+type: software
+authors:
+  - given-names: Mikołaj
+    family-names: Fejzer
+    email: mfejzer@mat.umk.pl
+  - given-names: Jakub
+    family-names: Narębski
+    email: jnareb@mat.umk.pl
+  - given-names: Piotr
+    family-names: Przymus
+    email: eror@mat.umk.pl
+  - given-names: Krzysztof
+    family-names: Stencel
+    email: stencel@mimuw.edu.pl
+identifiers:
+  - type: swh
+    value: 'swh:1:dir:ea99de2596da3015f41fcccf152c9a43340fe824'
+    description: original public fork of the repository
+abstract: >-
+  This repository contains scripts to process two datasets, feature preparation code
+  and implementation of algorithms from publication "Tracking Buggy Files: New Efficient
+  Adaptive Bug Localization Algorithm". Main directory contains python code to prepare
+  features and conduct experiments. The java-ast-extractor directory contains 4 programs
+  enriching source code files with ast trees, utilized during feature construction.
+  The ast trees are stored as git notes per each source file. The Java 8 and Apache Maven
+  are required to compile java-ast-extractor. Rest of scripts require python 3 and python 2.
+keywords:
+  - mining software repositories
+  - bug localization
+license: MIT
+preferred-citation:
+  type: article
+  authors:
+    - given-names: Mikołaj
+      family-names: Fejzer
+      email: mfejzer@mat.umk.pl
+      affiliation: >-
+        Faculty of Mathematics and Computer Science,
+        Nicolaus Copernicus University, Toruń, Poland
+      orcid: 'https://orcid.org/0000-0003-1496-2289'
+    - given-names: Jakub
+      family-names: Narębski
+      email: jnareb@mat.umk.pl
+      affiliation: >-
+        Faculty of Mathematics and Computer Science,
+        Nicolaus Copernicus University, Toruń, Poland
+      orcid: 'https://orcid.org/0000-0002-3296-3915'
+    - given-names: Piotr
+      family-names: Przymus
+      email: eror@mat.umk.pl
+      affiliation: >-
+        Faculty of Mathematics and Computer Science,
+        Nicolaus Copernicus University, Toruń, Poland
+      orcid: 'https://orcid.org/0000-0001-9548-2388'
+    - given-names: Krzysztof
+      family-names: Stencel
+      email: stencel@mimuw.edu.pl
+      affiliation: >-
+        Faculty of Mathematics, Informatics and Mechanics,
+        University of Warsaw, Warsaw, Poland
+      orcid: 'https://orcid.org/0000-0001-6356-4872'
+  doi: "10.1109/TSE.2021.3064447"
+  title: "Tracking Buggy Files: New Efficient Adaptive Bug Localization Algorithm"
+  journal: "IEEE Transactions on Software Engineering"
+  start: 2557 # First page number
+  end: 2569 # Last page number
+  volume: 48
+  issue: 7
+  year: 2022
+  abstract: >-
+    Upon receiving a new bug report, developers need to find its cause in the source code.
+    Bug localization can be helped by a tool that ranks all source files according
+    to how likely they include the bug. This problem was thoroughly examined by
+    numerous scientists. We introduce a novel adaptive bug localization algorithm.
+    The concept behind it is based on new feature weighting approaches and an adaptive
+    selection algorithm utilizing pointwise learn–to–rank method. The algorithm
+    is evaluated on publicly available datasets, and is competitive in terms of accuracy
+    and required computational resources compared to state–of–the–art. Additionally,
+    to improve reproducibility we provide extended datasets that include
+    computed features and partial steps, and we also provide the source code.
+  license: CC-BY-4.0
+  license-url: https://creativecommons.org/licenses/by/4.0/
